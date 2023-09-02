@@ -41,3 +41,11 @@ const toppings = document.getElementsByClassName('topping'); //ofrece como respu
 for ( const topping of toppings) { //for of para recorrer el contenido de la coleccion
     topping.addEventListener('click', mostrarClic);
 }
+
+/*si la funcion es pequeña o precisa se puede definir dentro del event listener como segundo argumento ej:
+
+for (const topping of toppings) {
+    topping.addEventListener('click', (e) =>{
+        console.log(e.target.innerText);
+    });
+ } */
